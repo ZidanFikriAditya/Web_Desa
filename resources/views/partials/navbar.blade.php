@@ -6,9 +6,9 @@
 
         <div class="hidden md:block">
             <ul class="flex gap-4">
-                <li class="text-sm md:text-lg font-semibold text-white">Home</li>
-                <li class="text-sm md:text-lg font-semibold text-white">About</li>
-                <li class="text-sm md:text-lg font-semibold text-white">Contact</li>
+                <li class="text-sm md:text-md font-semibold text-white {{ request()->segment(1) === null ? 'bg-white px-2 text-black rounded' : ''  }}"><a href="/">Home</a></li>
+                <li class="text-sm md:text-md font-semibold text-white {{ request()->segment(1) === 'post' ? 'bg-white px-2 text-black rounded' : ''  }}"><a href="/post">Blog</a></li>
+                <li class="text-sm md:text-md font-semibold text-white {{ request()->segment(1) === 'about' ? 'bg-white px-2 text-black rounded' : ''  }}"><a href="/about">About</a></li>
             </ul>
         </div>
         <div class="block md:hidden">

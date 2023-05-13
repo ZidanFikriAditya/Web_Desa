@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
     <div class="h-screen flex justify-center items-center">
         <div class="rounded-2xl bg-slate-50 w-full lg:w-[50%] p-7 shadow-2xl">
             <h3 class="text-2xl font-semibold text-center mb-5">Login</h3>

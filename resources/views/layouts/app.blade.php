@@ -18,7 +18,7 @@
 <body>
     @include('partials.navbar')
 
-    <div class="px-2 md:px-10 mt-[3.9rem] bg-slate-400">
+    <div class="px-2 md:px-10 mt-[3.9rem] bg-slate-400 min-h-screen">
         @yield('content')
     </div>
 
